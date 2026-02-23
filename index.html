@@ -572,16 +572,27 @@
         .project-card:hover::before {
             transform: scaleX(1);
         }
-
+        
+        /* UPDATED IMAGE STYLING */
         .project-image {
             width: 100%;
-            height: 220px;
-            background: linear-gradient(135deg, rgba(0, 217, 255, 0.1), rgba(124, 58, 237, 0.1));
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 4rem;
+            aspect-ratio: 16 / 9; /* Ensures all images same size */
+            overflow: hidden;
             border-bottom: 1px solid var(--border-color);
+            background: var(--bg-card);
+        }
+        
+        .project-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Prevents stretching */
+            display: block;
+            transition: transform 0.5s ease;
+        }
+        
+        /* Smooth hover zoom */
+        .project-card:hover .project-img {
+            transform: scale(1.08);
         }
 
         .project-content {
