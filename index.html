@@ -611,6 +611,7 @@
             display: flex;
             flex-wrap: wrap;
             gap: 0.5rem;
+            margin-bottom: 1rem;
         }
 
         .tech-tag {
@@ -621,6 +622,28 @@
             font-size: 0.8rem;
             font-family: 'JetBrains Mono', monospace;
             border: 1px solid rgba(124, 58, 237, 0.2);
+        }
+
+        .project-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .project-link {
+            color: var(--accent-primary);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .project-link:hover {
+            color: var(--accent-secondary);
+            transform: translateX(3px);
         }
 
         /* Contact Section */
@@ -998,38 +1021,111 @@
             <div class="section-header reveal">
                 <div class="section-label">FEATURED WORK</div>
                 <h2 class="section-title">Projects</h2>
-                <p class="section-description">Innovative solutions combining machine learning, data analysis, and web development</p>
+                <p class="section-description">Real-world applications and development projects from my GitHub</p>
             </div>
             <div class="projects-grid">
+                <!-- Online Gift Shop -->
                 <div class="project-card reveal">
-                    <div class="project-image">🎤</div>
+                    <div class="project-image">🎁</div>
                     <div class="project-content">
-                        <div class="project-year">2025</div>
-                        <h3>Sentiment Analysis in Tamil</h3>
-                        <p>Speech-based sentiment analysis system using machine learning to identify emotions (happy, sad, neutral) from voice input with Tamil-to-English translation capabilities.</p>
+                        <div class="project-year">WEB DEVELOPMENT</div>
+                        <h3>Online Gift Shop Website</h3>
+                        <p>An online gift shop web application designed to make gifting simple and personalized. Browse, customize, and purchase gifts for various occasions such as birthdays, anniversaries, and celebrations.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">E-commerce</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Madhesh0203/online-gift-shop-website" target="_blank" class="project-link">
+                                View Code →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slooze Data Challenge -->
+                <div class="project-card reveal">
+                    <div class="project-image">📊</div>
+                    <div class="project-content">
+                        <div class="project-year">DATA ANALYTICS</div>
+                        <h3>Slooze Data Challenge</h3>
+                        <p>Data analytics and processing challenge focused on solving real-world business problems using Python. Demonstrates data manipulation, analysis, and visualization capabilities.</p>
                         <div class="project-tech">
                             <span class="tech-tag">Python</span>
-                            <span class="tech-tag">LSTM</span>
-                            <span class="tech-tag">MFCC</span>
-                            <span class="tech-tag">Flask</span>
-                            <span class="tech-tag">Groq API</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card reveal">
-                    <div class="project-image">🌍</div>
-                    <div class="project-content">
-                        <div class="project-year">2024</div>
-                        <h3>Environmental Survey Project</h3>
-                        <p>Led drone survey and data analysis for Mega Foundation to assess environmental challenges, mapping problem zones and supporting ecological restoration planning.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Drone Tech</span>
                             <span class="tech-tag">Data Analysis</span>
-                            <span class="tech-tag">GIS</span>
-                            <span class="tech-tag">Research</span>
+                            <span class="tech-tag">Pandas</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Madhesh0203/slooze-data-challenge" target="_blank" class="project-link">
+                                View Code →
+                            </a>
                         </div>
                     </div>
                 </div>
+
+                <!-- Slooze Inventory Analytics -->
+                <div class="project-card reveal">
+                    <div class="project-image">📈</div>
+                    <div class="project-content">
+                        <div class="project-year">DATA SCIENCE</div>
+                        <h3>Inventory Analytics System</h3>
+                        <p>Advanced inventory analytics platform using Jupyter Notebook for data-driven insights. Analyzes inventory patterns, trends, and optimization opportunities for better business decisions.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Jupyter</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Analytics</span>
+                            <span class="tech-tag">Visualization</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Madhesh0203/slooze-inventory-analytics" target="_blank" class="project-link">
+                                View Code →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mini-nmap -->
+                <div class="project-card reveal">
+                    <div class="project-image">🔍</div>
+                    <div class="project-content">
+                        <div class="project-year">NETWORK SECURITY</div>
+                        <h3>Mini Network Scanner</h3>
+                        <p>A lightweight network scanning tool inspired by nmap. Built with Python to discover hosts and services on a computer network, useful for network administrators and security professionals.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Networking</span>
+                            <span class="tech-tag">Security</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Madhesh0203/Mini-nmap" target="_blank" class="project-link">
+                                View Code →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Java C-Section Project -->
+                <div class="project-card reveal">
+                    <div class="project-image">☕</div>
+                    <div class="project-content">
+                        <div class="project-year">FULL STACK</div>
+                        <h3>Java Web Application</h3>
+                        <p>Full-stack web application developed using Java technologies. Demonstrates proficiency in backend development, database integration, and front-end design with HTML.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">Web Dev</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Madhesh0203/java_c-section_project" target="_blank" class="project-link">
+                                View Code →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
